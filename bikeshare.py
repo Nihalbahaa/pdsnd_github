@@ -106,11 +106,6 @@ def get_filters(gg):
         
     return (data)
   
-    
-
-
-   
-
 def stat(data):
     #calculate some important statisticals
     print("here is some usefull statistical about bikeshare system ")    
@@ -137,6 +132,7 @@ def User_info(data):
     print("the counts of each user type: ",data.groupby(['User Type'])['Unnamed: 0'].count(),"\n  the counts of each gender: ",data.groupby(['Gender'])['Unnamed: 0'].count(),"\n  the most common year of birth",statistics.mode(data['Birth Year']))
    
 def main():
+    # the main program under a wile loop to repeat using it many times
     while True:
         city=input("which city you want get information about (washington, chicago or new_york) ").lower()
         gg=excel(city)
