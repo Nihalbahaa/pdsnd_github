@@ -1,3 +1,4 @@
+
 import pandas as pd
 import numpy as np
 import datetime 
@@ -38,7 +39,7 @@ def get_filters(gg):
                 m=int(input("which month do you want filter with, please inter integer value "))
                 break
             except:
-                print("\n that\'s not a valid number! please try again")
+                print("\n that\'s not a valid number! please try again \n ")
         while True:        
             if m<=6:
 
@@ -53,7 +54,7 @@ def get_filters(gg):
                                                      
             try:
                                     
-                d=int(input("please inter the day that you want filter "))
+                d=int(input("please inter the day that you want filter \n "))
                 break
             except:
                                    
@@ -75,7 +76,7 @@ def get_filters(gg):
                 m=int(input("which month do you want filter with, please inter integer value "))
                 break
             except:
-                print("\n that\'s not a valid number! please try again")
+                print("\n that\'s not a valid number! please try again \n ")
         while True:
             if m<=6:
                 break
@@ -88,10 +89,10 @@ def get_filters(gg):
         
         while True:
             try:
-                d=int(input("please inter the day that you want filter "))
+                d=int(input("please inter the day that you want filter \n "))
                 break
             except:
-                print("\n that\'s not a valid number! please try again")
+                print("\n that\'s not a valid number! please try again \n ")
         while True:
             if d<=6:
                 break
